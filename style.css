@@ -26,6 +26,7 @@ h1 {
     font-size: 28px;
     color: #eee;
     text-align: center;
+    background-color: grey;
 }
 
 h2 {
@@ -76,4 +77,5 @@ a {
     width: 200px;
     height: 200px;
     margin-right: 20px;
+    box-shadow: 10px 10px 5px black;
 }
