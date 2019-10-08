@@ -1,81 +1,126 @@
-/*
- First External CSS Stylesheet
- */
+/* Body */
+body{
+    background-color: #EDEDED; 
+}
+/* Navbar */
+.navbar{
+    max-height: 57px; 
+}
+.navigation .navbar-brand{
+    color: white; 
+    margin-left: 30px; 
+    padding: inherit; 
+    font-weight: bold; 
+    background-color: #0BADA6;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.navbar{
+    background-color: white; 
+    font-size: 15px; 
+}
+.active, .dropdown-menu .dropdown-item:active a:hover{
+    background-color:#E7E7E7!important; 
+}
+.dropdown-item{
+    color: #6D8092 !important; 
+}
+.dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover{
+    background-color:#E7E7E7 !important; 
+}
+a{
+    color: #6D8092;
+    font-size: 15px; 
+}
+.nav-link:hover{
+    background-color:#E7E7E7 !important;
+   }
 
-
-/* Styling for HTML elements */
-
-body {
-    padding: 0;
-    margin: 0;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 18px;
-    line-height: 150%;
-    color: #333;
-    background: #efeee7;
+.navbar-brand:hover{
+color: rgb(175, 175, 175) !important;
+}
+/* Images */
+img{
+    width:100% !important;
+    height:100% !important;
+}
+.active, .panel:hover{
+    border-color:#0BADA6;
+    border-style: solid; 
+    
+}
+.vizualization{
+    width:50% !important;
+    height:50% !important;
 }
 
-header {
-    background: #333;
+/* Title Class  */
+.title{
+    color: #0BADA6;  
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder; 
+    padding-top: 25px; 
+}
+/* Paragraph Element */
+p{
+ color: #6D8092;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 17px; 
+}
+/* Box Class */
+.box {
+    margin-top: 60px; 
+    margin-bottom: 62px; 
+    padding: 10px 20px 15px; 
+    color:black;
+    background-color: white; 
+
+  }
+/* Table */
+  .table{
+    font-size: 15px; 
+    border-top-color: white !important; 
+}
+/* Footer */
+footer{
+background-color: #666666; 
+border-top-style: solid; 
+border-top-width: 5px; 
+border-top-color: #0BADA6;
+color: white; 
+min-height: 55px; 
+font-family: Arial, Helvetica, sans-serif;
+font-size: 15px; 
+text-align: center; 
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+padding-top: 15px; 
+}
+/* Media Queries */
+@media(max-width: 992px){
+.navbar-expand-lg{
+background-color: #0BADA6 !important;
+}
+.navbar{
+    max-height: none; 
+    padding: inherit;
+}
+.navbar div{
+    margin: inherit; 
+    background-color: white;  
+}
+.navbar-brand{
+    padding: 10px !important; 
 }
 
-h1 {
-    padding: 20px 0;
-    margin: 0;
-    margin-bottom: 20px;
-    font-size: 28px;
-    color: #eee;
-    text-align: center;
-    background-color: grey;
+button{
+    margin-right: 30px; 
 }
+button:focus {
 
-h2 {
-    font-size: 24px;
-}
-
-a {
-    color: #d21034;
-}
-
-
-/* Selecting elements by class */
-
-.container {
-    width: 1024px;
-    margin: 0 auto;
-}
-
-
-/* Selecting elements by ID */
-
-#main-bio,
-#contact-info,
-#bio-image {
-    float: left;
-}
-
-#figure {
-    position: relative;
-}
-
-#bio-name {
-    position: absolute;
-    top: 150px;
-    left: 30px;
-    color: #696969
-}
-
-#main-bio {
-    width: 70%;
-}
-
-#contact-info {
-    width: 30%;
-}
-
-#bio-image {
-    width: 200px;
-    height: 200px;
-    margin-right: 20px;
-    box-shadow: 10px 10px 5px black;
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focusring-color;
+    
+    }
 }
